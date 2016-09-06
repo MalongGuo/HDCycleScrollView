@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-NQ-Lzc" customClass="HDCycleScrollView">
+                                <rect key="frame" x="0.0" y="29" width="600" height="200"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="uhZ-Q2-gho"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-ra-TSN" customClass="HDCycleScrollView">
+                                <rect key="frame" x="0.0" y="238" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6fx-H7-r1e"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-3M-Gwx" customClass="HDCycleScrollView">
+                                <rect key="frame" x="0.0" y="297" width="600" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Noa-TP-fNh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7hK-3M-Gwx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8hW-D6-qNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5hI-NQ-Lzc" secondAttribute="trailing" id="Pdq-rT-TPm"/>
+                            <constraint firstItem="5hI-NQ-Lzc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="bQ4-8Y-Rot"/>
+                            <constraint firstItem="eeZ-ra-TSN" firstAttribute="top" secondItem="5hI-NQ-Lzc" secondAttribute="bottom" constant="9" id="bTm-1A-Hgx"/>
+                            <constraint firstAttribute="trailing" secondItem="7hK-3M-Gwx" secondAttribute="trailing" id="dzR-e1-tHa"/>
+                            <constraint firstItem="7hK-3M-Gwx" firstAttribute="top" secondItem="eeZ-ra-TSN" secondAttribute="bottom" constant="9" id="hV7-7f-vnJ"/>
+                            <constraint firstItem="eeZ-ra-TSN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i3c-nQ-jmP"/>
+                            <constraint firstItem="5hI-NQ-Lzc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pYF-AA-wLk"/>
+                            <constraint firstAttribute="trailing" secondItem="eeZ-ra-TSN" secondAttribute="trailing" id="tMj-h5-2yW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cycleView" destination="5hI-NQ-Lzc" id="WAV-SA-BXR"/>
+                        <outlet property="menuView" destination="7hK-3M-Gwx" id="scz-87-QP5"/>
+                        <outlet property="recommendView" destination="eeZ-ra-TSN" id="1qk-P4-ioV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
